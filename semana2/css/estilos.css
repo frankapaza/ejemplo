@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+body{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login-bg{
+    width: 50vw;
+    height: 100vh;
+    background-image: url('../image/GOKU.avif');
+    background-size: cover;
+    background-position: center;
+    float:left;
+}
+
+#formulario{
+    width: 50vw;
+    align-content: center;/*centra verticalmente*/
+}
+
+#formulario h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 300px;
+    margin: 0 auto;/*centra horizontalmente*/
+}
+
+.input-control{
+    margin-bottom: 20px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    background-color: #C3E7F6;
+    border-radius: 10px;
+    text-indent: 10px;
+    margin-top: 6px;
+    border: #000 solid 2px;
+}
+
+form button{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    background-color: #DD2315;
+    color: #fff;
+    border-radius: 10px;
+    border: #000 solid 2px;
+}
