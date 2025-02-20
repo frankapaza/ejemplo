@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --yellow: #FCEE8F;
+    --pink: #FBE5E6;
+    --skyblue: #DEE9FC;
+    --body-background: #121826;
+    --card-background: #212936;
+    --title-color: #E5E7EB;
+    --gray1: #9DA3AE;
+    --gray2: #D2D5DA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    background-color: var(--body-background);
+    background-image: url(../resources/Background_image.svg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;/*poniendole altura al body*/
+    justify-content: center;/*el align-items solo funciona con flex*/
+    align-items: center;
+    gap: 3em;
+}
+
+main{
+    display: flex;
+    gap: 3em;/*el gab solo existe con display:flex*/
+    justify-content: center;/*el justify-content solo existe con display:flex*/
+    flex-wrap: wrap;/*si el elemento hijo no cabe en la linea que se vaya a la otra linea*/
+}
+
+h1, h3{
+    color:var(--title-color)
+}
+
+h3{
+    font-size: 20px;
+}
+
+header{
+    width: 400px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header p{
+    margin-top: 1em;
+    color: var(--gray1);
+}
+
+.card-description{
+    color: var(--gray2);
+}
+
+article{
+    background-color: var(--card-background);
+    width: 260px;
+    border-radius: 20px;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+article p{
+    font-weight: 300;
+}
+
+article img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.emoji{
+    width: fit-content;/*se acopla al tamaño del elemento*/
+    padding: 0.4em;
+    font-size: 25px;
+    border-radius: 50%;/*siempre sera circulo*/
+}
+
+article:nth-child(1) .emoji{
+    background-color: var(--yellow)
+}
+
+article:nth-child(2) .emoji{
+    background-color: var(--skyblue)
+}
+
+article:nth-child(3) .emoji{
+    background-color: var(--pink)
+}
+
+@media (width < 1090px){
+    body{
+        padding: 3em 0;
+    }
+}
+
+@media (width < 700px){
+    header{
+        width: 95%;
+    }
+}
